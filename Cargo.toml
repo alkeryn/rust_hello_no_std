@@ -1,0 +1,11 @@
+[package]
+name = "hello_no_std"
+version = "0.1.0"
+edition = "2024"
+
+[profile.release]
+panic = "abort"
+lto = true
+
+[profile.dev]
+panic = "abort"
